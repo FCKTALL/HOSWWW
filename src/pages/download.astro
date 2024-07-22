@@ -1,34 +1,25 @@
 ---
-import { getCollection } from "astro:content"
-import PageLayout from "@layouts/PageLayout.astro"
-import ArrowCard from "@components/ArrowCard"
-import StackCard from "@components/StackCard.astro"
-import { SITE, SOCIALS } from "@consts"
-import TwinklingStars from "@components/TwinklingStars.astro"
-import MeteorShower from "@components/MeteorShower.astro"
-import Container from "@components/Container.astro"
+// No need to import any CSS files here, they are already included in the global styles
 ---
 
-<Container size="sm">
-  <section class="flex items-center justify-center min-h-screen bg-black">
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
-      <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-gray-100 mb-4">Log In</h2>
-      <form class="space-y-4">
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email address</label>
-          <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required />
-        </div>
-        <div>
-          <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-          <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required />
-        </div>
-        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Sign In
-        </button>
-      </form>
-      <div class="mt-6 text-center">
-        <p class="text-gray-600 dark:text-gray-400">Don't have an account? <a href="#" class="text-indigo-600 hover:text-indigo-500">Request access</a></p>
-      </div>
-    </div>
-  </section>
-</Container>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download - Hermetic OS</title>
+</head>
+<body class="bg-black text-white full-height">
+  <div class="center-content full-height">
+    <form class="login-form">
+      <h1 class="text-2xl font-bold mb-4">Log In</h1>
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" id="email" name="email" placeholder="Email address" required>
+      <label for="password" class="sr-only">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+      <p class="mt-4">Don't have an account? <a href="/request-access">Request access</a></p>
+    </form>
+  </div>
+</body>
+</html>
