@@ -56,14 +56,14 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "hermeticosv@hermeticos.dev",
-    HREF: "mailto:hermeticosv@hermeticos.dev",
+    TEXT: "customer.support@hereticos.foundation",
+    HREF: "mailto:customer.support@hereticos.foundation",
   },
   { 
-    NAME: "Github",
-    ICON: "github",
+    NAME: "Support for Customers ",
+    ICON: "email",
     TEXT: "hermetic+dev",
-    HREF: "https://github.com/"
+    HREF: "mailto:supp0rt@hereticos.foundation"
   },
   { 
     NAME: "LinkedIn",
