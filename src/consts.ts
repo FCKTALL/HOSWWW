@@ -75,7 +75,7 @@ export const SOCIALS: Socials = [
     NAME: "Twitter",
     ICON: "twitter-x",
     TEXT: "HermeticOS",
-    HREF: "https://twitter.com/",
+    HREF: "https://t.me/HermeticOS_bot",
   },
 ]
 
