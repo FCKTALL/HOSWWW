@@ -54,10 +54,10 @@ export const LINKS: Links = [
 // Socials
 export const SOCIALS: Socials = [
   { 
-    NAME: "Email",
+    NAME: "Contact Pre Buy/Buy/Support",
     ICON: "email", 
-    TEXT: "customer.support@hereticos.foundation",
-    HREF: "mailto:customer.support@hereticos.foundation",
+    TEXT: "Customer Service 24/7",
+    HREF: "https://t.me/HermeticOS_bot",
   },
   { 
     NAME: "Support for Customers ",
